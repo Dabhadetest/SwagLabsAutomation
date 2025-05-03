@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SwagLabsSuite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="listeners.TestListener" />
+	</listeners>
+
+	<test name="FunctionalTests">
+		<classes>
+			
+				<class name="tests.LoginTest" />
+				<class name="tests.CartTest" />
+				<class name="tests.CheckoutTest" />
+			
+		</classes>
+	</test>
+</suite>
